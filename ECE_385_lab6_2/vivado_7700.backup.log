@@ -1,0 +1,443 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Mon Nov 18 15:21:19 2024
+# Process ID: 7700
+# Current directory: C:/Users/bmg32/ECE_385_lab6_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28332 C:\Users\bmg32\ECE_385_lab6_2\ECE_385_lab6_2.xpr
+# Log file: C:/Users/bmg32/ECE_385_lab6_2/vivado.log
+# Journal file: C:/Users/bmg32/ECE_385_lab6_2\vivado.jou
+# Running On: Ben, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 34014 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/bmg32/hdmi_tx_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'hdmi_tx_0' is locked:
+* IP definition 'HDMI/DVI Encoder (1.0)' for IP 'hdmi_tx_0' (customized with software release 2022.2) has a different revision in the IP Catalog.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1864.734 ; gain = 419.035
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/utils_1/imports/synth_1/mb_usb_hdmi_top.dcp with file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Mon Nov 18 15:33:06 2024] Launched synth_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/runme.log
+[Mon Nov 18 15:33:06 2024] Launched impl_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/impl_1/runme.log
+open_hw_manager
+INFO: [Vivado 12-8217] Implementation run is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-run implementation and re-generate bitstream/PDI before doing hardware export.
+write_hw_platform -fixed -include_bit -force -file C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa ...
+WARNING: [Vivado_Tcl 4-413] Exported hardware design may be stale because Block Design is locked for the following reasons 
+* IP definition 'HDMI/DVI Encoder (1.0)' for IP 'hdmi_tx_0' (customized with software release 2022.2) has a different revision in the IP Catalog.
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+INFO: [Hsi 55-2053] elapsed time for repository (C:/Xilinx/Vivado/2022.2/data/embeddedsw) loading 0 seconds
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/utils_1/imports/synth_1/mb_usb_hdmi_top.dcp with file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 10 -scripts_only
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10 -scripts_only
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Mon Nov 18 15:42:13 2024] Launched synth_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/runme.log
+[Mon Nov 18 15:42:13 2024] Launched impl_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Mon Nov 18 15:43:58 2024] Launched synth_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/runme.log
+[Mon Nov 18 15:43:58 2024] Launched impl_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/impl_1/runme.log
+reset_run impl_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/utils_1/imports/synth_1/mb_usb_hdmi_top.dcp with file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Mon Nov 18 15:46:51 2024] Launched synth_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/runme.log
+[Mon Nov 18 15:46:51 2024] Launched impl_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa ...
+WARNING: [Vivado_Tcl 4-413] Exported hardware design may be stale because Block Design is locked for the following reasons 
+* IP definition 'HDMI/DVI Encoder (1.0)' for IP 'hdmi_tx_0' (customized with software release 2022.2) has a different revision in the IP Catalog.
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/utils_1/imports/synth_1/mb_usb_hdmi_top.dcp with file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Mon Nov 18 15:51:20 2024] Launched synth_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/runme.log
+[Mon Nov 18 15:51:20 2024] Launched impl_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa ...
+WARNING: [Vivado_Tcl 4-413] Exported hardware design may be stale because Block Design is locked for the following reasons 
+* IP definition 'HDMI/DVI Encoder (1.0)' for IP 'hdmi_tx_0' (customized with software release 2022.2) has a different revision in the IP Catalog.
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/utils_1/imports/synth_1/mb_usb_hdmi_top.dcp with file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Mon Nov 18 16:03:22 2024] Launched synth_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/runme.log
+[Mon Nov 18 16:03:22 2024] Launched impl_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/impl_1/runme.log
+INFO: [Vivado 12-8217] Implementation run is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-run implementation and re-generate bitstream/PDI before doing hardware export.
+write_hw_platform -fixed -include_bit -force -file C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa ...
+WARNING: [Vivado_Tcl 4-413] Exported hardware design may be stale because Block Design is locked for the following reasons 
+* IP definition 'HDMI/DVI Encoder (1.0)' for IP 'hdmi_tx_0' (customized with software release 2022.2) has a different revision in the IP Catalog.
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/utils_1/imports/synth_1/mb_usb_hdmi_top.dcp with file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Mon Nov 18 16:08:46 2024] Launched synth_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/runme.log
+[Mon Nov 18 16:08:46 2024] Launched impl_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa ...
+WARNING: [Vivado_Tcl 4-413] Exported hardware design may be stale because Block Design is locked for the following reasons 
+* IP definition 'HDMI/DVI Encoder (1.0)' for IP 'hdmi_tx_0' (customized with software release 2022.2) has a different revision in the IP Catalog.
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/utils_1/imports/synth_1/mb_usb_hdmi_top.dcp with file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Mon Nov 18 16:15:45 2024] Launched synth_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/runme.log
+[Mon Nov 18 16:15:45 2024] Launched impl_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/impl_1/runme.log
+INFO: [Vivado 12-8217] Implementation run is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-run implementation and re-generate bitstream/PDI before doing hardware export.
+write_hw_platform -fixed -include_bit -force -file C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa ...
+WARNING: [Vivado_Tcl 4-413] Exported hardware design may be stale because Block Design is locked for the following reasons 
+* IP definition 'HDMI/DVI Encoder (1.0)' for IP 'hdmi_tx_0' (customized with software release 2022.2) has a different revision in the IP Catalog.
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+INFO: [Vivado 12-8217] Implementation run is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-run implementation and re-generate bitstream/PDI before doing hardware export.
+write_hw_platform -fixed -include_bit -force -file C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa ...
+WARNING: [Vivado_Tcl 4-413] Exported hardware design may be stale because Block Design is locked for the following reasons 
+* IP definition 'HDMI/DVI Encoder (1.0)' for IP 'hdmi_tx_0' (customized with software release 2022.2) has a different revision in the IP Catalog.
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/utils_1/imports/synth_1/mb_usb_hdmi_top.dcp with file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Mon Nov 18 16:22:13 2024] Launched synth_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/runme.log
+[Mon Nov 18 16:22:14 2024] Launched impl_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/impl_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/utils_1/imports/synth_1/mb_usb_hdmi_top.dcp with file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Mon Nov 18 16:26:10 2024] Launched synth_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/runme.log
+[Mon Nov 18 16:26:10 2024] Launched impl_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/impl_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/utils_1/imports/synth_1/mb_usb_hdmi_top.dcp with file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Mon Nov 18 16:28:25 2024] Launched synth_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/runme.log
+[Mon Nov 18 16:28:25 2024] Launched impl_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Mon Nov 18 16:29:20 2024] Launched synth_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/runme.log
+[Mon Nov 18 16:29:20 2024] Launched impl_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/impl_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/utils_1/imports/synth_1/mb_usb_hdmi_top.dcp with file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Mon Nov 18 16:34:48 2024] Launched synth_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/runme.log
+[Mon Nov 18 16:34:48 2024] Launched impl_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa ...
+WARNING: [Vivado_Tcl 4-413] Exported hardware design may be stale because Block Design is locked for the following reasons 
+* IP definition 'HDMI/DVI Encoder (1.0)' for IP 'hdmi_tx_0' (customized with software release 2022.2) has a different revision in the IP Catalog.
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/utils_1/imports/synth_1/mb_usb_hdmi_top.dcp with file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Mon Nov 18 16:40:26 2024] Launched synth_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/runme.log
+[Mon Nov 18 16:40:26 2024] Launched impl_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa ...
+WARNING: [Vivado_Tcl 4-413] Exported hardware design may be stale because Block Design is locked for the following reasons 
+* IP definition 'HDMI/DVI Encoder (1.0)' for IP 'hdmi_tx_0' (customized with software release 2022.2) has a different revision in the IP Catalog.
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/utils_1/imports/synth_1/mb_usb_hdmi_top.dcp with file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Mon Nov 18 16:55:53 2024] Launched synth_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/runme.log
+[Mon Nov 18 16:55:53 2024] Launched impl_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa ...
+WARNING: [Vivado_Tcl 4-413] Exported hardware design may be stale because Block Design is locked for the following reasons 
+* IP definition 'HDMI/DVI Encoder (1.0)' for IP 'hdmi_tx_0' (customized with software release 2022.2) has a different revision in the IP Catalog.
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/utils_1/imports/synth_1/mb_usb_hdmi_top.dcp with file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Mon Nov 18 17:02:17 2024] Launched synth_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/runme.log
+[Mon Nov 18 17:02:17 2024] Launched impl_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa ...
+WARNING: [Vivado_Tcl 4-413] Exported hardware design may be stale because Block Design is locked for the following reasons 
+* IP definition 'HDMI/DVI Encoder (1.0)' for IP 'hdmi_tx_0' (customized with software release 2022.2) has a different revision in the IP Catalog.
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/utils_1/imports/synth_1/mb_usb_hdmi_top.dcp with file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Mon Nov 18 17:09:34 2024] Launched synth_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/runme.log
+[Mon Nov 18 17:09:34 2024] Launched impl_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/impl_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/utils_1/imports/synth_1/mb_usb_hdmi_top.dcp with file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Mon Nov 18 17:11:53 2024] Launched synth_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/runme.log
+[Mon Nov 18 17:11:53 2024] Launched impl_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/impl_1/runme.log
+INFO: [Vivado 12-8217] Implementation run is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-run implementation and re-generate bitstream/PDI before doing hardware export.
+write_hw_platform -fixed -include_bit -force -file C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa ...
+WARNING: [Vivado_Tcl 4-413] Exported hardware design may be stale because Block Design is locked for the following reasons 
+* IP definition 'HDMI/DVI Encoder (1.0)' for IP 'hdmi_tx_0' (customized with software release 2022.2) has a different revision in the IP Catalog.
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/utils_1/imports/synth_1/mb_usb_hdmi_top.dcp with file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Mon Nov 18 17:16:53 2024] Launched synth_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/runme.log
+[Mon Nov 18 17:16:53 2024] Launched impl_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Mon Nov 18 17:19:50 2024] Launched impl_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/impl_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/utils_1/imports/synth_1/mb_usb_hdmi_top.dcp with file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Mon Nov 18 17:21:25 2024] Launched synth_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/runme.log
+[Mon Nov 18 17:21:25 2024] Launched impl_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa ...
+WARNING: [Vivado_Tcl 4-413] Exported hardware design may be stale because Block Design is locked for the following reasons 
+* IP definition 'HDMI/DVI Encoder (1.0)' for IP 'hdmi_tx_0' (customized with software release 2022.2) has a different revision in the IP Catalog.
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/utils_1/imports/synth_1/mb_usb_hdmi_top.dcp with file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Mon Nov 18 17:27:31 2024] Launched synth_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/runme.log
+[Mon Nov 18 17:27:31 2024] Launched impl_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/impl_1/runme.log
+reset_run impl_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/utils_1/imports/synth_1/mb_usb_hdmi_top.dcp with file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Mon Nov 18 17:28:45 2024] Launched synth_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/runme.log
+[Mon Nov 18 17:28:46 2024] Launched impl_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa ...
+WARNING: [Vivado_Tcl 4-413] Exported hardware design may be stale because Block Design is locked for the following reasons 
+* IP definition 'HDMI/DVI Encoder (1.0)' for IP 'hdmi_tx_0' (customized with software release 2022.2) has a different revision in the IP Catalog.
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/utils_1/imports/synth_1/mb_usb_hdmi_top.dcp with file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Mon Nov 18 17:33:44 2024] Launched synth_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/runme.log
+[Mon Nov 18 17:33:44 2024] Launched impl_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa ...
+WARNING: [Vivado_Tcl 4-413] Exported hardware design may be stale because Block Design is locked for the following reasons 
+* IP definition 'HDMI/DVI Encoder (1.0)' for IP 'hdmi_tx_0' (customized with software release 2022.2) has a different revision in the IP Catalog.
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/utils_1/imports/synth_1/mb_usb_hdmi_top.dcp with file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Mon Nov 18 17:42:26 2024] Launched synth_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/runme.log
+[Mon Nov 18 17:42:26 2024] Launched impl_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa ...
+WARNING: [Vivado_Tcl 4-413] Exported hardware design may be stale because Block Design is locked for the following reasons 
+* IP definition 'HDMI/DVI Encoder (1.0)' for IP 'hdmi_tx_0' (customized with software release 2022.2) has a different revision in the IP Catalog.
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/utils_1/imports/synth_1/mb_usb_hdmi_top.dcp with file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Mon Nov 18 17:52:28 2024] Launched synth_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/runme.log
+[Mon Nov 18 17:52:28 2024] Launched impl_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa ...
+WARNING: [Vivado_Tcl 4-413] Exported hardware design may be stale because Block Design is locked for the following reasons 
+* IP definition 'HDMI/DVI Encoder (1.0)' for IP 'hdmi_tx_0' (customized with software release 2022.2) has a different revision in the IP Catalog.
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/utils_1/imports/synth_1/mb_usb_hdmi_top.dcp with file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Mon Nov 18 18:04:22 2024] Launched synth_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/runme.log
+[Mon Nov 18 18:04:22 2024] Launched impl_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/impl_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/utils_1/imports/synth_1/mb_usb_hdmi_top.dcp with file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Mon Nov 18 18:07:21 2024] Launched synth_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/runme.log
+[Mon Nov 18 18:07:21 2024] Launched impl_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/impl_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/utils_1/imports/synth_1/mb_usb_hdmi_top.dcp with file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Mon Nov 18 18:09:41 2024] Launched synth_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/runme.log
+[Mon Nov 18 18:09:41 2024] Launched impl_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/impl_1/runme.log
+INFO: [Vivado 12-8217] Implementation run is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-run implementation and re-generate bitstream/PDI before doing hardware export.
+write_hw_platform -fixed -include_bit -force -file C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa ...
+WARNING: [Vivado_Tcl 4-413] Exported hardware design may be stale because Block Design is locked for the following reasons 
+* IP definition 'HDMI/DVI Encoder (1.0)' for IP 'hdmi_tx_0' (customized with software release 2022.2) has a different revision in the IP Catalog.
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/utils_1/imports/synth_1/mb_usb_hdmi_top.dcp with file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Mon Nov 18 18:17:32 2024] Launched synth_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/runme.log
+[Mon Nov 18 18:17:32 2024] Launched impl_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/impl_1/runme.log
+INFO: [Vivado 12-8217] Implementation run is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-run implementation and re-generate bitstream/PDI before doing hardware export.
+write_hw_platform -fixed -include_bit -force -file C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa ...
+WARNING: [Vivado_Tcl 4-413] Exported hardware design may be stale because Block Design is locked for the following reasons 
+* IP definition 'HDMI/DVI Encoder (1.0)' for IP 'hdmi_tx_0' (customized with software release 2022.2) has a different revision in the IP Catalog.
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/utils_1/imports/synth_1/mb_usb_hdmi_top.dcp with file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Mon Nov 18 18:25:32 2024] Launched synth_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/runme.log
+[Mon Nov 18 18:25:32 2024] Launched impl_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Mon Nov 18 18:26:04 2024] Launched synth_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/runme.log
+[Mon Nov 18 18:26:04 2024] Launched impl_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa ...
+WARNING: [Vivado_Tcl 4-413] Exported hardware design may be stale because Block Design is locked for the following reasons 
+* IP definition 'HDMI/DVI Encoder (1.0)' for IP 'hdmi_tx_0' (customized with software release 2022.2) has a different revision in the IP Catalog.
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/utils_1/imports/synth_1/mb_usb_hdmi_top.dcp with file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Mon Nov 18 18:34:24 2024] Launched synth_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/runme.log
+[Mon Nov 18 18:34:24 2024] Launched impl_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/impl_1/runme.log
+INFO: [Vivado 12-8217] Implementation run is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-run implementation and re-generate bitstream/PDI before doing hardware export.
+write_hw_platform -fixed -include_bit -force -file C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa ...
+WARNING: [Vivado_Tcl 4-413] Exported hardware design may be stale because Block Design is locked for the following reasons 
+* IP definition 'HDMI/DVI Encoder (1.0)' for IP 'hdmi_tx_0' (customized with software release 2022.2) has a different revision in the IP Catalog.
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/utils_1/imports/synth_1/mb_usb_hdmi_top.dcp with file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Mon Nov 18 18:40:09 2024] Launched synth_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/runme.log
+[Mon Nov 18 18:40:09 2024] Launched impl_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa ...
+WARNING: [Vivado_Tcl 4-413] Exported hardware design may be stale because Block Design is locked for the following reasons 
+* IP definition 'HDMI/DVI Encoder (1.0)' for IP 'hdmi_tx_0' (customized with software release 2022.2) has a different revision in the IP Catalog.
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+write_hw_platform -fixed -include_bit -force -file C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa ...
+WARNING: [Vivado_Tcl 4-413] Exported hardware design may be stale because Block Design is locked for the following reasons 
+* IP definition 'HDMI/DVI Encoder (1.0)' for IP 'hdmi_tx_0' (customized with software release 2022.2) has a different revision in the IP Catalog.
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/utils_1/imports/synth_1/mb_usb_hdmi_top.dcp with file C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/mb_usb_hdmi_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Mon Nov 18 18:48:26 2024] Launched synth_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/synth_1/runme.log
+[Mon Nov 18 18:48:26 2024] Launched impl_1...
+Run output will be captured here: C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa ...
+WARNING: [Vivado_Tcl 4-413] Exported hardware design may be stale because Block Design is locked for the following reasons 
+* IP definition 'HDMI/DVI Encoder (1.0)' for IP 'hdmi_tx_0' (customized with software release 2022.2) has a different revision in the IP Catalog.
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/bmg32/ECE_385_lab6_2/mb_usb_hdmi_top.xsa
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 18 18:51:35 2024...

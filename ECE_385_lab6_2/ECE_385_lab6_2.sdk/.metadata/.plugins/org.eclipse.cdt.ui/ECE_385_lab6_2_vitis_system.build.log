@@ -1,0 +1,6 @@
+16:29:06 **** Build of configuration Debug for project ECE_385_lab6_2_vitis_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
+
+16:29:06 Build Finished (took 144ms)
+

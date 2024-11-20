@@ -1,0 +1,5 @@
+Nothing to build in platform 'mb_usb_hdmi_top'
+
+16:29:13 **** Incremental Build of configuration Debug for project ECE_385_lab6_2_vitis ****
+make all 
+make: Nothing to be done for 'all'.

@@ -1,0 +1,950 @@
+/*
+
+Xilinx Vivado v2022.2 (64-bit) [Major: 2022, Minor: 2]
+SW Build: 3671981 on Fri Oct 14 05:00:03 MDT 2022
+IP Build: 3669848 on Fri Oct 14 08:30:02 MDT 2022
+
+Process ID (PID): 39052
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Wed Nov 20 15:13:13 CST 2024
+Time zone: 	Central Standard Time (America/Chicago)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 20
+
+Screen size: 1920x1200
+Screen resolution (DPI): 125
+Available screens: 1
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+Scale size: 19
+
+Java version: 	11.0.11 64-bit
+Java home: 	C:/Xilinx/Vivado/2022.2/tps/win64/jre11.0.11_9
+Java executable: 	C:/Xilinx/Vivado/2022.2/tps/win64/jre11.0.11_9/bin/java.exe
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Xverify:none, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, -XX:NewSize=60m, -XX:MaxNewSize=60m, -Xms256m, -Xmx3072m, -Xss5m]
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	bmg32
+User home directory: C:/Users/bmg32
+User working directory: C:/Users/bmg32/ECE_385_lab6_2
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2022.2
+RDI_DATADIR: C:/Xilinx/Vivado/2022.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2022.2/bin
+
+Vivado preferences file: C:/Users/bmg32/AppData/Roaming/Xilinx/Vivado/2022.2/vivado.xml
+Vivado preferences directory: C:/Users/bmg32/AppData/Roaming/Xilinx/Vivado/2022.2/
+Vivado layouts directory: C:/Users/bmg32/AppData/Roaming/Xilinx/Vivado/2022.2/data/layouts
+PlanAhead jar file: 	C:/Xilinx/Vivado/2022.2/lib/classes/planAhead.jar
+Vivado log file: 	C:/Users/bmg32/ECE_385_lab6_2/vivado.log
+Vivado journal file: 	C:/Users/bmg32/ECE_385_lab6_2/vivado.jou
+Engine tmp dir: 	C:/Users/bmg32/ECE_385_lab6_2/.Xil/Vivado-39052-Ben
+
+Xilinx Environment Variables
+----------------------------
+RDI_APPROOT: C:/Xilinx/Vivado/2022.2
+RDI_ARGS:  -gui_launcher_event rodinguilauncherevent2972 "C:\Users\bmg32\ECE_385_lab6_2\ECE_385_lab6_2.xpr"
+RDI_ARGS_FUNCTION: RDI_EXEC_DEFAULT
+RDI_BASEROOT: C:/Xilinx/Vivado
+RDI_BINDIR: C:/Xilinx/Vivado/2022.2/bin
+RDI_BINROOT: C:/Xilinx/Vivado/2022.2/bin
+RDI_BUILD: yes
+RDI_CHECK_PROG: True
+RDI_DATADIR: C:/Xilinx/Vivado/2022.2/data
+RDI_INSTALLROOT: C:/Xilinx
+RDI_INSTALLVER: 2022.2
+RDI_INSTALLVERSION: 2022.2
+RDI_ISE_PLATFORM: nt64
+RDI_JAVACEFROOT: C:/Xilinx/Vivado/2022.2/tps/win64/java-cef-95.0.4638.69
+RDI_JAVAFXROOT: C:/Xilinx/Vivado/2022.2/tps/win64/javafx-sdk-11.0.2
+RDI_JAVAROOT: C:/Xilinx/Vivado/2022.2/tps/win64/jre11.0.11_9
+RDI_JAVA_VERSION: 11.0.11_9
+RDI_LIBDIR: C:/Xilinx/Vivado/2022.2/lib/win64.o
+RDI_MINGW_LIB: C:/Xilinx/Vivado/2022.2\tps\mingw\6.2.0\win64.o\nt\bin;C:/Xilinx/Vivado/2022.2\tps\mingw\6.2.0\win64.o\nt\libexec\gcc\x86_64-w64-mingw32\6.2.0
+RDI_OPT_EXT: .o
+RDI_PLATFORM: win64
+RDI_PREPEND_PATH: C:/Xilinx/Vitis/2022.2/bin;C:/Xilinx/Vivado/2022.2/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2022.2/ids_lite/ISE/lib/nt64
+RDI_PROG: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/vivado.exe
+RDI_PROGNAME: vivado.exe
+RDI_PYTHON3: C:/Xilinx/Vivado/2022.2\tps\win64\python-3.8.3
+RDI_PYTHON3_VERSION: 3.8.3
+RDI_PYTHONHOME: C:/Xilinx/Vivado/2022.2\tps\win64\python-3.8.3
+RDI_PYTHONPATH: C:/Xilinx/Vivado/2022.2\tps\win64\python-3.8.3;C:/Xilinx/Vivado/2022.2\tps\win64\python-3.8.3\bin;C:/Xilinx/Vivado/2022.2\tps\win64\python-3.8.3\lib;C:/Xilinx/Vivado/2022.2\tps\win64\python-3.8.3\lib\site-packages
+RDI_PYTHON_LD_LIBPATH: C:/Xilinx/Vivado/2022.2\tps\win64\python-3.8.3\lib
+RDI_TPS_ROOT: C:/Xilinx/Vivado/2022.2/tps/win64
+RDI_USE_JDK11: True
+RDI_VERBOSE: False
+XILINX: C:/Xilinx/Vivado/2022.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2022.2/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2022.2
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2022.2
+XILINX_SDK: C:/Xilinx/Vitis/2022.2
+XILINX_VITIS: C:/Xilinx/Vitis/2022.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2022.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2022.2
+_RDI_BINROOT: C:\Xilinx\Vivado\2022.2\bin
+_RDI_CWD: C:\Users\bmg32\ECE_385_lab6_2
+
+
+GUI allocated memory:	406 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,447 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 86 MB (+87282kb) [00:00:15]
+// [Engine Memory]: 1,310 MB (+1222412kb) [00:00:15]
+// Opening Vivado Project: C:\Users\bmg32\ECE_385_lab6_2\ECE_385_lab6_2.xpr. Version: Vivado v2022.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,490 MB. GUI used memory: 61 MB. Current time: 11/20/24, 3:13:14 PM CST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 96 MB (+6648kb) [00:00:24]
+// [Engine Memory]: 1,591 MB (+225671kb) [00:00:24]
+// [GUI Memory]: 111 MB (+10080kb) [00:00:25]
+// [GUI Memory]: 117 MB (+358kb) [00:00:25]
+// [GUI Memory]: 126 MB (+4178kb) [00:00:25]
+// [Engine Memory]: 1,684 MB (+14392kb) [00:00:25]
+// WARNING: HEventQueue.dispatchEvent() is taking  2283 ms.
+// Tcl Message: open_project C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/bmg32/hdmi_tx_1.0'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'. 
+// [GUI Memory]: 139 MB (+6033kb) [00:00:26]
+// WARNING: HEventQueue.dispatchEvent() is taking  1011 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1841.363 ; gain = 247.727 
+// Project name: ECE_385_lab6_2; location: C:/Users/bmg32/ECE_385_lab6_2; part: xc7s50csga324-1
+dismissDialog("Open Project"); // bq
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 30 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mb_usb_hdmi_top (mb_usb_hdmi_top.sv)]", 1); // D
+// Elapsed time: 141 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mb_usb_hdmi_top (mb_usb_hdmi_top.sv)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mb_usb_hdmi_top (mb_usb_hdmi_top.sv)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+// Elapsed time: 10 seconds
+selectCodeEditor("mb_usb_hdmi_top.sv", 39, 144); // ac
+selectCodeEditor("mb_usb_hdmi_top.sv", 346, 320); // ac
+selectCodeEditor("mb_usb_hdmi_top.sv", 342, 325); // ac
+selectCodeEditor("mb_usb_hdmi_top.sv", 459, 335); // ac
+// Elapsed time: 137 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mb_usb_hdmi_top (mb_usb_hdmi_top.sv)]", 1); // D
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// Elapsed time: 11 seconds
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "SystemVerilog", 2); // bc
+// Elapsed time: 33 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "tetrisFSM"); // Q
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Tcl Command: 'file mkdir C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/new'
+dismissDialog("Create Source File"); // m
+// Tcl Message: file mkdir C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/new 
+selectButton("FINISH", "Finish"); // JButton
+// 'f' command handler elapsed time: 53 seconds
+dismissDialog("Add Sources"); // c
+// Tcl Message: close [ open C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/new/tetrisFSM.sv w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/new/tetrisFSM.sv 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+selectButton("OptionPane.button", "Yes"); // JButton
+dismissDialog("Define Module"); // p
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 149 MB (+3468kb) [00:06:58]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tetrisFSM (tetrisFSM.sv)]", 11, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tetrisFSM (tetrisFSM.sv)]", 11, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 56 seconds
+selectCodeEditor("tetrisFSM.sv", 151, 491); // ac
+typeControlKey((HResource) null, "tetrisFSM.sv", 'v'); // ac
+// Elapsed time: 29 seconds
+selectCodeEditor("tetrisFSM.sv", 119, 553); // ac
+typeControlKey((HResource) null, "tetrisFSM.sv", 'v'); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 16 seconds
+selectCodeEditor("tetrisFSM.sv", 446, 138); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 46 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "SystemVerilog", 2); // bc
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "rows"); // Q
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // m
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "SystemVerilog", 2); // bc
+// Elapsed time: 47 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "blockStorage"); // Q
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // m
+selectButton("FINISH", "Finish"); // JButton
+// 'f' command handler elapsed time: 64 seconds
+dismissDialog("Add Sources"); // c
+// Tcl Message: close [ open C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/new/rows.sv w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/new/rows.sv 
+// Tcl Message: close [ open C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/new/blockStorage.sv w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/new/blockStorage.sv 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+selectButton("OptionPane.button", "Yes"); // JButton
+dismissDialog("Define Modules"); // p
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rows (rows.sv)]", 13, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rows (rows.sv)]", 13, false, false, false, false, false, true); // D - Double Click
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tetrisFSM (tetrisFSM.sv)]", 12); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tetrisFSM (tetrisFSM.sv), LUT : xil_defaultlib.shift_row_LUT]", 13, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tetrisFSM (tetrisFSM.sv), LUT : xil_defaultlib.shift_row_LUT]", 13, false, false, false, false, false, true); // D - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tetrisFSM.sv", 2); // o
+// HMemoryUtils.trashcanNow. Engine heap size: 1,755 MB. GUI used memory: 86 MB. Current time: 11/20/24, 3:23:59 PM CST
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tetrisFSM (tetrisFSM.sv), LUT : xil_defaultlib.shift_row_LUT]", 13, false); // D
+selectCodeEditor("tetrisFSM.sv", 227, 351); // ac
+selectCodeEditor("tetrisFSM.sv", 227, 351); // ac
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "LUT"); // d.c
+selectButton(RDIResource.HCodeEditor_CLOSE, (String) null); // j
+selectCodeEditor("tetrisFSM.sv", 545, 375); // ac
+// Elapsed time: 23 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "SystemVerilog", 2); // bc
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "findShiftRow"); // Q
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // m
+// Elapsed time: 13 seconds
+selectButton("FINISH", "Finish"); // JButton
+// 'f' command handler elapsed time: 32 seconds
+dismissDialog("Add Sources"); // c
+// Tcl Message: close [ open C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/new/findShiftRow.sv w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/new/findShiftRow.sv 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+selectButton("OptionPane.button", "Yes"); // JButton
+dismissDialog("Define Module"); // p
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("tetrisFSM.sv", 0, 538); // ac
+selectCodeEditor("tetrisFSM.sv", 206, 526); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("tetrisFSM.sv", 136, 541); // ac
+selectCodeEditor("tetrisFSM.sv", 136, 541, false, false, false, false, true); // ac - Double Click
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("tetrisFSM.sv", 288, 447); // ac
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, findShiftRow (findShiftRow.sv)]", 14, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, findShiftRow (findShiftRow.sv)]", 14, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 24 seconds
+selectCodeEditor("findShiftRow.sv", 0, 490); // ac
+typeControlKey((HResource) null, "findShiftRow.sv", 'v'); // ac
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("findShiftRow.sv", 511, 570); // ac
+// TclEventType: DG_GRAPH_STALE
+// Elapsed time: 45 seconds
+selectCodeEditor("findShiftRow.sv", 520, 527); // ac
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rows.sv", 3); // o
+// Elapsed time: 24 seconds
+selectCodeEditor("rows.sv", 103, 487); // ac
+typeControlKey((HResource) null, "rows.sv", 'v'); // ac
+selectCodeEditor("rows.sv", 80, 564); // ac
+selectCodeEditor("rows.sv", 306, 433); // ac
+selectCodeEditor("rows.sv", 37, 350); // ac
+selectCodeEditor("rows.sv", 41, 352); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 26 seconds
+selectCodeEditor("rows.sv", 146, 141, false, false, false, true, false); // ac - Popup Trigger
+selectCodeEditor("rows.sv", 49, 147); // ac
+selectCodeEditor("rows.sv", 333, 198); // ac
+selectCodeEditor("rows.sv", 92, 430); // ac
+selectCodeEditor("rows.sv", 433, 271); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tetrisFSM (tetrisFSM.sv)]", 12); // D
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a
+// HMemoryUtils.trashcanNow. Engine heap size: 1,775 MB. GUI used memory: 89 MB. Current time: 11/20/24, 3:28:24 PM CST
+dismissFileChooser();
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "SystemVerilog", 2); // bc
+// [Engine Memory]: 1,775 MB (+6318kb) [00:15:40]
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "blockStorage"); // Q
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// HOptionPane Warning: 'A file with the specified name already exists. Please enter another name. (Create Source File)'
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Create Source File"); // m
+selectButton("CANCEL", "Cancel"); // JButton
+// 'f' command handler elapsed time: 25 seconds
+dismissDialog("Add Sources"); // c
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 15); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 16); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files]", 17); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files]", 17); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files]", 17); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, blockStorage.sv]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, blockStorage.sv]", 2, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, blockStorage.sv]", 2, false, false, false, false, true, false); // D - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ao
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Remove Sources"); // U
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/new/blockStorage.sv] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/new/blockStorage.sv 
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "Verilog Header", 1); // bc
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "SystemVerilog", 2); // bc
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "blockStorage"); // Q
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// HOptionPane Warning: 'A file with the specified name already exists. Please enter another name. (Create Source File)'
+selectButton("OptionPane.button", "OK"); // JButton
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "blockStorages"); // Q
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // m
+selectButton("FINISH", "Finish"); // JButton
+// 'f' command handler elapsed time: 19 seconds
+dismissDialog("Add Sources"); // c
+// Tcl Message: close [ open C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/new/blockStorages.sv w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/new/blockStorages.sv 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+selectButton("OptionPane.button", "Yes"); // JButton
+dismissDialog("Define Module"); // p
+// TclEventType: FILE_SET_CHANGE
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 14); // D
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, blockStorages (blockStorages.sv)]", 12, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, blockStorages (blockStorages.sv)]", 12, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 27 seconds
+selectCodeEditor("blockStorages.sv", 205, 472); // ac
+typeControlKey((HResource) null, "blockStorages.sv", 'v'); // ac
+selectCodeEditor("blockStorages.sv", 100, 552); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 45 seconds
+selectCodeEditor("blockStorages.sv", 109, 560); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("blockStorages.sv", 325, 305); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "findShiftRow.sv", 4); // o
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mb_usb_hdmi_top (mb_usb_hdmi_top.sv), color_instance : color_mapper (Color_Mapper.sv)]", 9, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mb_usb_hdmi_top (mb_usb_hdmi_top.sv), color_instance : color_mapper (Color_Mapper.sv)]", 9, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 72 seconds
+selectCodeEditor("Color_Mapper.sv", 0, 100); // ac
+selectCodeEditor("Color_Mapper.sv", 185, 165); // ac
+selectCodeEditor("Color_Mapper.sv", 32, 372); // ac
+typeControlKey((HResource) null, "Color_Mapper.sv", 'v'); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Color_Mapper.sv", 244, 310); // ac
+selectCodeEditor("Color_Mapper.sv", 228, 312); // ac
+selectCodeEditor("Color_Mapper.sv", 270, 354); // ac
+selectCodeEditor("Color_Mapper.sv", 243, 378); // ac
+selectCodeEditor("Color_Mapper.sv", 206, 372); // ac
+selectCodeEditor("Color_Mapper.sv", 267, 393); // ac
+selectCodeEditor("Color_Mapper.sv", 271, 414); // ac
+selectCodeEditor("Color_Mapper.sv", 259, 429); // ac
+selectCodeEditor("Color_Mapper.sv", 270, 457); // ac
+selectCodeEditor("Color_Mapper.sv", 271, 470); // ac
+selectCodeEditor("Color_Mapper.sv", 269, 498); // ac
+selectCodeEditor("Color_Mapper.sv", 351, 416); // ac
+selectCodeEditor("Color_Mapper.sv", 346, 348); // ac
+selectCodeEditor("Color_Mapper.sv", 209, 520); // ac
+selectCodeEditor("Color_Mapper.sv", 189, 562); // ac
+selectCodeEditor("Color_Mapper.sv", 207, 546); // ac
+selectCodeEditor("Color_Mapper.sv", 205, 542); // ac
+selectCodeEditor("Color_Mapper.sv", 301, 521); // ac
+selectCodeEditor("Color_Mapper.sv", 297, 537); // ac
+selectCodeEditor("Color_Mapper.sv", 490, 510); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 65 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+// Elapsed time: 21 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "levelSpeedChange"); // Q
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // m
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 1 ; levelSpeedChange.v ; xil_defaultlib ; <Local to Project>", 0, "VSourceFile", 0); // aM
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 1 ; levelSpeedChange.v ; xil_defaultlib ; <Local to Project>", 0, "VSourceFile", 0, false, false, false, true, false); // aM - Popup Trigger
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 1 ; levelSpeedChange.v ; xil_defaultlib ; <Local to Project>", 0, "VSourceFile", 0, false, false, false, true, false); // aM - Popup Trigger
+selectMenu(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // al
+selectMenuItem(PAResourceQtoS.SrcChooserPanel_CHANGE_SOURCE_PROPERTIES, "Change Source Properties..."); // ao
+dismissDialog("Configure Sources"); // an
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 1 ; levelSpeedChange.v ; xil_defaultlib ; <Local to Project>", 0, "VSourceFile", 0, false, false, false, true, false); // aM - Popup Trigger
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 1 ; levelSpeedChange.v ; xil_defaultlib ; <Local to Project>", 0, "VSourceFile", 0, false, false, false, true, false); // aM - Popup Trigger
+selectMenu(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // al
+selectMenuItem(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // ao
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a
+dismissFileChooser();
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "SystemVerilog", 2); // bc
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "levelSpeedChanger"); // Q
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // m
+selectButton("FINISH", "Finish"); // JButton
+// 'f' command handler elapsed time: 53 seconds
+dismissDialog("Add Sources"); // c
+// Tcl Message: close [ open C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/new/levelSpeedChanger.sv w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/new/levelSpeedChanger.sv 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+selectButton("OptionPane.button", "Yes"); // JButton
+dismissDialog("Define Module"); // p
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, levelSpeedChanger (levelSpeedChanger.sv)]", 13, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, levelSpeedChanger (levelSpeedChanger.sv)]", 13, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("levelSpeedChanger.sv", 252, 482); // ac
+selectCodeEditor("levelSpeedChanger.sv", 244, 482); // ac
+typeControlKey((HResource) null, "levelSpeedChanger.sv", 'v'); // ac
+selectCodeEditor("levelSpeedChanger.sv", 49, 561); // ac
+selectCodeEditor("levelSpeedChanger.sv", 5, 506); // ac
+selectCodeEditor("levelSpeedChanger.sv", 0, 412); // ac
+selectCodeEditor("levelSpeedChanger.sv", 2, 159); // ac
+selectCodeEditor("levelSpeedChanger.sv", 2, 180); // ac
+selectCodeEditor("levelSpeedChanger.sv", 1, 244); // ac
+selectCodeEditor("levelSpeedChanger.sv", 1, 265); // ac
+selectCodeEditor("levelSpeedChanger.sv", 0, 288); // ac
+selectCodeEditor("levelSpeedChanger.sv", 5, 307); // ac
+selectCodeEditor("levelSpeedChanger.sv", 2, 414); // ac
+selectCodeEditor("levelSpeedChanger.sv", 2, 350); // ac
+selectCodeEditor("levelSpeedChanger.sv", 68, 434); // ac
+selectCodeEditor("levelSpeedChanger.sv", 258, 269); // ac
+selectCodeEditor("levelSpeedChanger.sv", 228, 247); // ac
+selectCodeEditor("levelSpeedChanger.sv", 243, 313); // ac
+selectCodeEditor("levelSpeedChanger.sv", 226, 477); // ac
+selectCodeEditor("levelSpeedChanger.sv", 289, 318); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// Elapsed time: 15 seconds
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "SystemVerilog", 2); // bc
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "ClockRevamp"); // Q
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // m
+// Elapsed time: 14 seconds
+selectButton("FINISH", "Finish"); // JButton
+// 'f' command handler elapsed time: 42 seconds
+dismissDialog("Add Sources"); // c
+// Tcl Message: close [ open C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/new/ClockRevamp.sv w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/new/ClockRevamp.sv 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+selectButton("OptionPane.button", "Yes"); // JButton
+dismissDialog("Define Module"); // p
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ClockRevamp (ClockRevamp.sv)]", 12, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ClockRevamp (ClockRevamp.sv)]", 12, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("ClockRevamp.sv", 124, 500); // ac
+selectCodeEditor("ClockRevamp.sv", 5, 493); // ac
+typeControlKey((HResource) null, "ClockRevamp.sv", 'v'); // ac
+selectCodeEditor("ClockRevamp.sv", 1, 145); // ac
+// Elapsed time: 16 seconds
+selectCodeEditor("ClockRevamp.sv", 13, 349); // ac
+selectCodeEditor("ClockRevamp.sv", 0, 372); // ac
+selectCodeEditor("ClockRevamp.sv", 0, 390); // ac
+selectCodeEditor("ClockRevamp.sv", 3, 413); // ac
+selectCodeEditor("ClockRevamp.sv", 2, 434); // ac
+selectCodeEditor("ClockRevamp.sv", 0, 450); // ac
+selectCodeEditor("ClockRevamp.sv", 1, 479); // ac
+selectCodeEditor("ClockRevamp.sv", 2, 491); // ac
+selectCodeEditor("ClockRevamp.sv", 2, 517); // ac
+selectCodeEditor("ClockRevamp.sv", 1, 535); // ac
+selectCodeEditor("ClockRevamp.sv", 1, 558); // ac
+// Elapsed time: 26 seconds
+selectCodeEditor("ClockRevamp.sv", 3, 287); // ac
+selectCodeEditor("ClockRevamp.sv", 0, 326); // ac
+selectCodeEditor("ClockRevamp.sv", 1, 348); // ac
+selectCodeEditor("ClockRevamp.sv", 0, 373); // ac
+selectCodeEditor("ClockRevamp.sv", 2, 394); // ac
+selectCodeEditor("ClockRevamp.sv", 2, 415); // ac
+selectCodeEditor("ClockRevamp.sv", 2, 430); // ac
+// Elapsed time: 20 seconds
+selectCodeEditor("ClockRevamp.sv", 2, 480); // ac
+selectCodeEditor("ClockRevamp.sv", 13, 460); // ac
+selectCodeEditor("ClockRevamp.sv", 0, 469); // ac
+selectCodeEditor("ClockRevamp.sv", 1, 493); // ac
+selectCodeEditor("ClockRevamp.sv", 6, 521); // ac
+selectCodeEditor("ClockRevamp.sv", 5, 521); // ac
+selectCodeEditor("ClockRevamp.sv", 0, 536); // ac
+selectCodeEditor("ClockRevamp.sv", 313, 511); // ac
+selectCodeEditor("ClockRevamp.sv", 306, 560); // ac
+selectCodeEditor("ClockRevamp.sv", 306, 560); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("ClockRevamp.sv", 0, 351); // ac
+// Elapsed time: 19 seconds
+selectCodeEditor("ClockRevamp.sv", 2, 372); // ac
+selectCodeEditor("ClockRevamp.sv", 5, 388); // ac
+selectCodeEditor("ClockRevamp.sv", 5, 391); // ac
+selectCodeEditor("ClockRevamp.sv", 171, 352); // ac
+selectCodeEditor("ClockRevamp.sv", 262, 391); // ac
+selectCodeEditor("ClockRevamp.sv", 300, 422); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("ClockRevamp.sv", 2, 476); // ac
+selectCodeEditor("ClockRevamp.sv", 0, 477); // ac
+selectCodeEditor("ClockRevamp.sv", 2, 491); // ac
+selectCodeEditor("ClockRevamp.sv", 9, 516); // ac
+selectCodeEditor("ClockRevamp.sv", 2, 163); // ac
+selectCodeEditor("ClockRevamp.sv", 1, 181); // ac
+selectCodeEditor("ClockRevamp.sv", 1, 198); // ac
+selectCodeEditor("ClockRevamp.sv", 73, 183); // ac
+selectCodeEditor("ClockRevamp.sv", 1, 222); // ac
+selectCodeEditor("ClockRevamp.sv", 0, 246); // ac
+selectCodeEditor("ClockRevamp.sv", 1, 267); // ac
+selectCodeEditor("ClockRevamp.sv", 1, 268); // ac
+selectCodeEditor("ClockRevamp.sv", 2, 349); // ac
+selectCodeEditor("ClockRevamp.sv", 0, 369); // ac
+selectCodeEditor("ClockRevamp.sv", 0, 383); // ac
+selectCodeEditor("ClockRevamp.sv", 2, 417); // ac
+// Elapsed time: 12 seconds
+selectCodeEditor("ClockRevamp.sv", 1, 584); // ac
+selectCodeEditor("ClockRevamp.sv", 21, 555); // ac
+selectCodeEditor("ClockRevamp.sv", 256, 285); // ac
+selectCodeEditor("ClockRevamp.sv", 268, 182); // ac
+selectCodeEditor("ClockRevamp.sv", 270, 222); // ac
+selectCodeEditor("ClockRevamp.sv", 261, 260); // ac
+selectCodeEditor("ClockRevamp.sv", 273, 302); // ac
+selectCodeEditor("ClockRevamp.sv", 254, 264); // ac
+selectCodeEditor("ClockRevamp.sv", 72, 165); // ac
+selectCodeEditor("ClockRevamp.sv", 73, 180); // ac
+selectCodeEditor("ClockRevamp.sv", 70, 197); // ac
+selectCodeEditor("ClockRevamp.sv", 110, 225); // ac
+selectCodeEditor("ClockRevamp.sv", 75, 249); // ac
+selectCodeEditor("ClockRevamp.sv", 72, 262); // ac
+selectCodeEditor("ClockRevamp.sv", 45, 286); // ac
+selectCodeEditor("ClockRevamp.sv", 105, 311); // ac
+selectCodeEditor("ClockRevamp.sv", 71, 328); // ac
+selectCodeEditor("ClockRevamp.sv", 155, 455); // ac
+selectCodeEditor("ClockRevamp.sv", 211, 501); // ac
+selectCodeEditor("ClockRevamp.sv", 270, 544); // ac
+selectCodeEditor("ClockRevamp.sv", 240, 578); // ac
+selectCodeEditor("ClockRevamp.sv", 431, 464); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "SystemVerilog", 2); // bc
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "randNumGen"); // Q
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // m
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Create Source File"); // m
+selectButton("FINISH", "Finish"); // JButton
+// 'f' command handler elapsed time: 16 seconds
+dismissDialog("Add Sources"); // c
+// Tcl Message: close [ open C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/new/randNumGen.sv w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/new/randNumGen.sv 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+selectButton("OptionPane.button", "Yes"); // JButton
+dismissDialog("Define Module"); // p
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 48 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, randNumGen (randNumGen.sv)]", 15, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, randNumGen (randNumGen.sv)]", 15, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("randNumGen.sv", 42, 500); // ac
+// HMemoryUtils.trashcanNow. Engine heap size: 1,796 MB. GUI used memory: 92 MB. Current time: 11/20/24, 3:44:19 PM CST
+selectCodeEditor("randNumGen.sv", 42, 500); // ac
+typeControlKey((HResource) null, "randNumGen.sv", 'v'); // ac
+selectCodeEditor("randNumGen.sv", 9, 101); // ac
+selectCodeEditor("randNumGen.sv", 15, 122); // ac
+selectCodeEditor("randNumGen.sv", 35, 99); // ac
+selectCodeEditor("randNumGen.sv", 15, 160); // ac
+selectCodeEditor("randNumGen.sv", 5, 143); // ac
+selectCodeEditor("randNumGen.sv", 392, 202); // ac
+selectCodeEditor("randNumGen.sv", 17, 230); // ac
+selectCodeEditor("randNumGen.sv", 34, 286); // ac
+selectCodeEditor("randNumGen.sv", 105, 266); // ac
+selectCodeEditor("randNumGen.sv", 213, 308); // ac
+selectCodeEditor("randNumGen.sv", 201, 350); // ac
+selectCodeEditor("randNumGen.sv", 591, 378); // ac
+selectCodeEditor("randNumGen.sv", 585, 368); // ac
+selectCodeEditor("randNumGen.sv", 597, 430); // ac
+selectCodeEditor("randNumGen.sv", 109, 526); // ac
+selectCodeEditor("randNumGen.sv", 383, 404); // ac
+// Elapsed time: 37 seconds
+selectCodeEditor("randNumGen.sv", 359, 283); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+// 'f' command handler elapsed time: 64 seconds
+// Elapsed time: 58 seconds
+dismissDialog("Add Sources"); // c
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rows (rows.sv)]", 16, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, levelSpeedChanger (levelSpeedChanger.sv)]", 14, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ClockRevamp (ClockRevamp.sv)]", 12, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ClockRevamp (ClockRevamp.sv)]", 12, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ClockRevamp (ClockRevamp.sv)]", 12, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 35 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "SystemVerilog", 2); // bc
+// Elapsed time: 37 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "changeBlock"); // Q
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // m
+selectButton("FINISH", "Finish"); // JButton
+// 'f' command handler elapsed time: 48 seconds
+dismissDialog("Add Sources"); // c
+// Tcl Message: close [ open C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/new/changeBlock.sv w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/new/changeBlock.sv 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+selectButton("OptionPane.button", "Yes"); // JButton
+dismissDialog("Define Module"); // p
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, changeBlock (changeBlock.sv)]", 14, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, changeBlock (changeBlock.sv)]", 14, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("changeBlock.sv", 39, 496); // ac
+typeControlKey((HResource) null, "changeBlock.sv", 'v'); // ac
+selectCodeEditor("changeBlock.sv", 72, 574); // ac
+selectCodeEditor("changeBlock.sv", 0, 435); // ac
+selectCodeEditor("changeBlock.sv", 2, 454); // ac
+selectCodeEditor("changeBlock.sv", 0, 479); // ac
+selectCodeEditor("changeBlock.sv", 382, 474); // ac
+selectCodeEditor("changeBlock.sv", 0, 246); // ac
+selectCodeEditor("changeBlock.sv", 1, 262); // ac
+selectCodeEditor("changeBlock.sv", 0, 289); // ac
+selectCodeEditor("changeBlock.sv", 1, 315); // ac
+selectCodeEditor("changeBlock.sv", 1, 308); // ac
+selectCodeEditor("changeBlock.sv", 1, 352); // ac
+selectCodeEditor("changeBlock.sv", 1, 372); // ac
+selectCodeEditor("changeBlock.sv", 4, 413); // ac
+selectCodeEditor("changeBlock.sv", 2, 433); // ac
+selectCodeEditor("changeBlock.sv", 2, 459); // ac
+selectCodeEditor("changeBlock.sv", 0, 518); // ac
+selectCodeEditor("changeBlock.sv", 110, 247); // ac
+selectCodeEditor("changeBlock.sv", 2, 309); // ac
+selectCodeEditor("changeBlock.sv", 2, 331); // ac
+selectCodeEditor("changeBlock.sv", 1, 351); // ac
+selectCodeEditor("changeBlock.sv", 1, 371); // ac
+selectCodeEditor("changeBlock.sv", 1, 388); // ac
+selectCodeEditor("changeBlock.sv", 1, 411); // ac
+selectCodeEditor("changeBlock.sv", 1, 432); // ac
+selectCodeEditor("changeBlock.sv", 8, 459); // ac
+selectCodeEditor("changeBlock.sv", 1, 457); // ac
+selectCodeEditor("changeBlock.sv", 1, 478); // ac
+selectCodeEditor("changeBlock.sv", 0, 498); // ac
+selectCodeEditor("changeBlock.sv", 0, 519); // ac
+selectCodeEditor("changeBlock.sv", 0, 537); // ac
+selectCodeEditor("changeBlock.sv", 3, 559); // ac
+selectCodeEditor("changeBlock.sv", 18, 336); // ac
+selectCodeEditor("changeBlock.sv", 9, 325); // ac
+selectCodeEditor("changeBlock.sv", 5, 330); // ac
+selectCodeEditor("changeBlock.sv", 0, 344); // ac
+selectCodeEditor("changeBlock.sv", 0, 365); // ac
+selectCodeEditor("changeBlock.sv", 1, 387); // ac
+selectCodeEditor("changeBlock.sv", 1, 408); // ac
+selectCodeEditor("changeBlock.sv", 0, 431); // ac
+selectCodeEditor("changeBlock.sv", 2, 464); // ac
+selectCodeEditor("changeBlock.sv", 2, 458); // ac
+selectCodeEditor("changeBlock.sv", 2, 458); // ac
+selectCodeEditor("changeBlock.sv", 2, 473); // ac
+selectCodeEditor("changeBlock.sv", 0, 496); // ac
+selectCodeEditor("changeBlock.sv", 1, 521); // ac
+selectCodeEditor("changeBlock.sv", 2, 541); // ac
+selectCodeEditor("changeBlock.sv", 2, 556); // ac
+selectCodeEditor("changeBlock.sv", 18, 477); // ac
+// Elapsed time: 100 seconds
+selectCodeEditor("changeBlock.sv", 250, 451); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("changeBlock.sv", 202, 390); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "SystemVerilog", 2); // bc
+// Elapsed time: 19 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "nextBlock"); // Q
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // m
+selectButton("FINISH", "Finish"); // JButton
+// 'f' command handler elapsed time: 25 seconds
+dismissDialog("Add Sources"); // c
+// Tcl Message: close [ open C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/new/nextBlock.sv w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/new/nextBlock.sv 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+selectButton("OptionPane.button", "Yes"); // JButton
+dismissDialog("Define Module"); // p
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 30 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nextBlock (nextBlock.sv)]", 16, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nextBlock (nextBlock.sv)]", 16, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("nextBlock.sv", 109, 532); // ac
+selectCodeEditor("nextBlock.sv", 203, 523); // ac
+selectCodeEditor("nextBlock.sv", 2, 433); // ac
+typeControlKey((HResource) null, "nextBlock.sv", 'v'); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("nextBlock.sv", 1, 353); // ac
+selectCodeEditor("nextBlock.sv", 0, 431); // ac
+selectCodeEditor("nextBlock.sv", 3, 454); // ac
+selectCodeEditor("nextBlock.sv", 1, 475); // ac
+selectCodeEditor("nextBlock.sv", 3, 499); // ac
+selectCodeEditor("nextBlock.sv", 1, 516); // ac
+selectCodeEditor("nextBlock.sv", 1, 534); // ac
+selectCodeEditor("nextBlock.sv", 2, 435); // ac
+selectCodeEditor("nextBlock.sv", 0, 452); // ac
+selectCodeEditor("nextBlock.sv", 1, 477); // ac
+selectCodeEditor("nextBlock.sv", 1, 492); // ac
+selectCodeEditor("nextBlock.sv", 0, 513); // ac
+selectCodeEditor("nextBlock.sv", 0, 538); // ac
+selectCodeEditor("nextBlock.sv", 8, 183); // ac
+selectCodeEditor("nextBlock.sv", 122, 107); // ac
+selectCodeEditor("nextBlock.sv", 2, 372); // ac
+selectCodeEditor("nextBlock.sv", 7, 393); // ac
+// Elapsed time: 42 seconds
+selectCodeEditor("nextBlock.sv", 19, 442); // ac
+selectCodeEditor("nextBlock.sv", 2, 432); // ac
+selectCodeEditor("nextBlock.sv", 2, 459); // ac
+selectCodeEditor("nextBlock.sv", 3, 476); // ac
+selectCodeEditor("nextBlock.sv", 74, 456); // ac
+selectCodeEditor("nextBlock.sv", 3, 476); // ac
+typeControlKey(null, null, 'z');
+selectCodeEditor("nextBlock.sv", 2, 498); // ac
+selectCodeEditor("nextBlock.sv", 0, 519); // ac
+selectCodeEditor("nextBlock.sv", 1, 540); // ac
+selectCodeEditor("nextBlock.sv", 1, 561); // ac
+selectCodeEditor("nextBlock.sv", 0, 581); // ac
+selectCodeEditor("nextBlock.sv", 2, 284); // ac
+selectCodeEditor("nextBlock.sv", 2, 312); // ac
+selectCodeEditor("nextBlock.sv", 2, 333); // ac
+selectCodeEditor("nextBlock.sv", 2, 348); // ac
+selectCodeEditor("nextBlock.sv", 2, 369); // ac
+selectCodeEditor("nextBlock.sv", 4, 395); // ac
+// Elapsed time: 12 seconds
+selectCodeEditor("nextBlock.sv", 0, 406); // ac
+selectCodeEditor("nextBlock.sv", 0, 440); // ac
+selectCodeEditor("nextBlock.sv", 1, 460); // ac
+typeControlKey(null, null, 'z');
+selectCodeEditor("nextBlock.sv", 4, 474); // ac
+selectCodeEditor("nextBlock.sv", 4, 491); // ac
+selectCodeEditor("nextBlock.sv", 1, 516); // ac
+selectCodeEditor("nextBlock.sv", 1, 540); // ac
+selectCodeEditor("nextBlock.sv", 3, 562); // ac
+selectCodeEditor("nextBlock.sv", 1, 268); // ac
+selectCodeEditor("nextBlock.sv", 3, 289); // ac
+selectCodeEditor("nextBlock.sv", 2, 309); // ac
+selectCodeEditor("nextBlock.sv", 2, 327); // ac
+selectCodeEditor("nextBlock.sv", 2, 349); // ac
+selectCodeEditor("nextBlock.sv", 1, 367); // ac
+selectCodeEditor("nextBlock.sv", 0, 388); // ac
+selectCodeEditor("nextBlock.sv", 0, 411); // ac
+selectCodeEditor("nextBlock.sv", 0, 433); // ac
+selectCodeEditor("nextBlock.sv", 0, 451); // ac
+selectCodeEditor("nextBlock.sv", 1, 350); // ac
+selectCodeEditor("nextBlock.sv", 1, 373); // ac
+selectCodeEditor("nextBlock.sv", 1, 387); // ac
+selectCodeEditor("nextBlock.sv", 1, 407); // ac
+selectCodeEditor("nextBlock.sv", 3, 372); // ac
+typeControlKey(null, null, 'z');
+selectCodeEditor("nextBlock.sv", 1, 391); // ac
+selectCodeEditor("nextBlock.sv", 1, 411); // ac
+selectCodeEditor("nextBlock.sv", 1, 429); // ac
+selectCodeEditor("nextBlock.sv", 2, 458); // ac
+selectCodeEditor("nextBlock.sv", 3, 477); // ac
+selectCodeEditor("nextBlock.sv", 2, 373); // ac
+selectCodeEditor("nextBlock.sv", 46, 244); // ac
+selectCodeEditor("nextBlock.sv", 184, 128); // ac
+selectCodeEditor("nextBlock.sv", 5, 181); // ac
+selectCodeEditor("nextBlock.sv", 0, 198); // ac
+selectCodeEditor("nextBlock.sv", 0, 222); // ac
+selectCodeEditor("nextBlock.sv", 34, 206); // ac
+selectCodeEditor("nextBlock.sv", 1, 247); // ac
+selectCodeEditor("nextBlock.sv", 1, 267); // ac
+selectCodeEditor("nextBlock.sv", 1, 288); // ac
+selectCodeEditor("nextBlock.sv", 2, 308); // ac
+selectCodeEditor("nextBlock.sv", 0, 330); // ac
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("nextBlock.sv", 1, 350); // ac
+selectCodeEditor("nextBlock.sv", 3, 369); // ac
+selectCodeEditor("nextBlock.sv", 4, 388); // ac
+selectCodeEditor("nextBlock.sv", 1, 414); // ac
+selectCodeEditor("nextBlock.sv", 2, 435); // ac
+selectCodeEditor("nextBlock.sv", 0, 457); // ac
+selectCodeEditor("nextBlock.sv", 0, 478); // ac
+selectCodeEditor("nextBlock.sv", 1, 495); // ac
+selectCodeEditor("nextBlock.sv", 1, 514); // ac
+selectCodeEditor("nextBlock.sv", 1, 541); // ac
+selectCodeEditor("nextBlock.sv", 1, 562); // ac
+selectCodeEditor("nextBlock.sv", 2, 582); // ac
+selectCodeEditor("nextBlock.sv", 3, 601); // ac
+selectCodeEditor("nextBlock.sv", 5, 374); // ac
+selectCodeEditor("nextBlock.sv", 0, 387); // ac
+selectCodeEditor("nextBlock.sv", 3, 412); // ac
+selectCodeEditor("nextBlock.sv", 2, 437); // ac
+selectCodeEditor("nextBlock.sv", 3, 260); // ac
+selectCodeEditor("nextBlock.sv", 2, 286); // ac
+selectCodeEditor("nextBlock.sv", 1, 310); // ac
+selectCodeEditor("nextBlock.sv", 2, 329); // ac
+selectCodeEditor("nextBlock.sv", 2, 351); // ac
+selectCodeEditor("nextBlock.sv", 2, 370); // ac
+selectCodeEditor("nextBlock.sv", 0, 389); // ac
+selectCodeEditor("nextBlock.sv", 2, 411); // ac
+selectCodeEditor("nextBlock.sv", 1, 437); // ac
+selectCodeEditor("nextBlock.sv", 1, 459); // ac
+selectCodeEditor("nextBlock.sv", 1, 476); // ac
+typeControlKey(null, null, 'z');
+selectCodeEditor("nextBlock.sv", 1, 495); // ac
+selectCodeEditor("nextBlock.sv", 0, 517); // ac
+selectCodeEditor("nextBlock.sv", 2, 541); // ac
+selectCodeEditor("nextBlock.sv", 2, 561); // ac
+selectCodeEditor("nextBlock.sv", 15, 540); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+dismissDialog("Create Source File"); // m
+// 'f' command handler elapsed time: 15 seconds
+dismissDialog("Add Sources"); // c
