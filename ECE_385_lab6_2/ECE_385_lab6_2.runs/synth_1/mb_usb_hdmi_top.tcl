@@ -90,10 +90,29 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib -sv {
+  C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/new/ClockRevamp.sv
   C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/imports/design_source/Color_Mapper.sv
   C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/imports/design_source/VGA_controller.sv
-  C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/imports/design_source/ball.sv
+  C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/new/blockMoves.sv
+  C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/new/blockPlacer.sv
+  C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/new/blockStorages.sv
+  C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/new/boardPlacer.sv
+  C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/new/changeBlock.sv
+  C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/new/changeBlockPlacer.sv
+  C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/new/changeBoardPlacer.sv
+  C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/new/findShiftRow.sv
   C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/imports/design_source/hex_driver.sv
+  C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/new/levelSpeedChanger.sv
+  C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/new/nextBlock.sv
+  C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/new/nextBlockPlacer.sv
+  C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/new/nextBoardPlacer.sv
+  C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/new/placer.sv
+  C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/new/randNumGen.sv
+  C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/new/rows.sv
+  C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/new/selecter.sv
+  C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/new/startScreen.sv
+  C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/new/tetrisFSM.sv
+  C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/new/trackMain.sv
   C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/imports/design_source/mb_usb_hdmi_top.sv
 }
 add_files C:/Users/bmg32/ECE_385_lab6_2/ECE_385_lab6_2.srcs/sources_1/bd/mb_block/mb_block.bd
